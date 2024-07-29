@@ -1,0 +1,212 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 0.5rem; */
+  /* text-align: center; */
+}
+
+.error-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 50px;
+  height: auto;
+  align-content: start;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.login-page form {
+  display: flex;
+  max-width: 50%;
+  height: 50vh;
+  margin: 0 auto;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  font-size: large;
+}
+
+.login-page form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-page form div input {
+  min-height: 30px;
+  flex-grow: 1;
+}
+.login-page form div label {
+  width: 6rem;
+}
+
+button {
+  min-height: 30px;
+}
+form button:hover {
+  background-color: green;
+  color: white;
+}
+form button:active {
+  background-color: rgb(20, 152, 20);
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: smaller;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  background-color: green;
+  color: white;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* flex-grow: 1; */
+}
+.active {
+  background-color: aliceblue;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  color: green;
+}
+.linkTab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 60%;
+  padding-inline: 0.5rem;
+  /* margin: 0 auto; */
+}
+.userTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 2rem;
+  width: 40%;
+  padding-inline: 0.5rem;
+}
+
+.heading {
+  background-color: green;
+  color: white;
+  margin: 0;
+  border-top: 1px solid white;
+  padding: 0.5rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  height: 100vh;
+}
+
+table {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(48, 255, 55, 0.204);
+  border-radius: 0.3rem;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th {
+  padding: 1rem;
+  background-color: green;
+  color: white;
+  text-align: left;
+}
+
+th:first-of-type {
+  border-top-left-radius: 0.3rem;
+}
+
+th:last-of-type {
+  border-top-right-radius: 0.3rem;
+}
+
+tr:hover {
+  background-color: rgba(226, 226, 226, 0.638);
+}
+td {
+  padding: 1rem;
+}
+
+.hover:hover {
+  font-size: 0.9rem;
+}
+
+.empDetails {
+  display: flex;
+  min-width: 50%;
+  /* height: 50vh; */
+  margin: 2rem auto;
+  gap: 1rem;
+  justify-content: top;
+  flex-direction: column;
+  font-size: large;
+  box-shadow: 0 0 10px rgba(48, 255, 55, 0.204);
+  padding: 0.5rem;
+}
+.empDetails_container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.empDetails div label {
+  width: 6rem;
+}
+.empDetails div input {
+  flex-grow: 1;
+  min-height: 1.2rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.loader {
+  margin-inline: auto;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid green;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
